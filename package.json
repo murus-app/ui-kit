@@ -1,0 +1,46 @@
+{
+  "name": "@murus-app/ui-kit",
+  "version": "0.1.0",
+  "scripts": {
+    "yarn": "yarn",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:prod": "ng build --configuration=\"production\"",
+    "build:ci": "yarn run build:prod",
+    "lint": "ng lint",
+    "lint:debug": "ng lint --configuration=\"debugging\"",
+    "lint:inspect": "ng lint --configuration=\"inspection\"",
+    "lint:ci": "yarn run lint",
+    "prettier:check": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --check \"./**/*.{html,css,scss,json,js,ts}\"",
+    "prettier:format": "prettier --loglevel log --config ./.prettierrc --ignore-path ./.prettierignore --write \"./**/*.{html,css,scss,json,js,ts}\"",
+    "autofix": "yarn run lint:debug && yarn run prettier:format && yarn run lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~11.0.6",
+    "@angular/common": "~11.0.6",
+    "@angular/compiler": "~11.0.6",
+    "@angular/core": "~11.0.6",
+    "@angular/forms": "~11.0.6",
+    "@angular/platform-browser": "~11.0.6",
+    "@angular/platform-browser-dynamic": "~11.0.6",
+    "@angular/router": "~11.0.6",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.6",
+    "@angular/cli": "~11.0.6",
+    "@angular/compiler-cli": "~11.0.6",
+    "@murus-app/build-cli": "^0.1.0-dce711e8f9acabcabb1cdf37fe4e9118aad84c5e",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "ng-packagr": "^11.0.3",
+    "prettier": "^2.1.2",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.0.2"
+  }
+}

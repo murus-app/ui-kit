@@ -1,0 +1,24 @@
+name: Lint source files
+
+on:
+  push:
+    branches:
+      - '**'
+
+env:
+  NPM_DEPLOY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Process linting
+        run: docker-compose build --force-rm lint_service
