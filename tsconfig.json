@@ -15,12 +15,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"],
-    "paths": {
-      "ui-kit": ["dist/ui-kit/ui-kit", "dist/ui-kit", "dist/ui-kit/ui-kit", "dist/ui-kit"],
-      "components": ["dist/components/components", "dist/components"],
-      "widget-board": ["dist/widget-board/widget-board", "dist/widget-board"]
-    }
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
