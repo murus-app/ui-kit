@@ -1131,10 +1131,12 @@
     "@murus-app/node-utilities" "^0.1.0-258fd242f78177463823b717464e1e831b3d9e72"
     fancy-log "^1.3.3"
 
-"@murus-app/node-utilities@^0.1.0-258fd242f78177463823b717464e1e831b3d9e72":
-  version "0.1.0-a6581b490cea5fb38b6dc0a66edfcd0b7c260a92"
-  resolved "https://npm.pkg.github.com/download/@murus-app/node-utilities/0.1.0-a6581b490cea5fb38b6dc0a66edfcd0b7c260a92/698f81f4c923d5856142deaf8d9080d81ca0b4e4d026a531897adb5fc057889c#c4dfc00ae87b93ddebd13a24b63c6c7df65f1038"
-  integrity sha512-rqJw3UwoG8BOBXTIAnCKEmq39TuyCga+kE87FpZnujsBtaq0504ifhEevsoc1D/gKMq5XiJhSbQUypJ23bFrRw==
+"@murus-app/node-utilities@^0.1.0-258fd242f78177463823b717464e1e831b3d9e72", "@murus-app/node-utilities@^0.1.0-7e458cf31bfb3d1e430f4274c1db0fe73ed4af35":
+  version "0.1.0-7e458cf31bfb3d1e430f4274c1db0fe73ed4af35"
+  resolved "https://npm.pkg.github.com/download/@murus-app/node-utilities/0.1.0-7e458cf31bfb3d1e430f4274c1db0fe73ed4af35/311144a492390c3aa763f1426c08c20464c401a48962827068659198eda37627#fa8e0bee1bde92f84a73e0caa9e8bc3d94883047"
+  integrity sha512-EfBsQjJFiW1nlIx+QAxuCq8kJ6RrVsR4NB/V1/HNL/QLUNkCUf16zFs0f+K5ApIqvND02luFgfmlPCkPLgpAMA==
+  dependencies:
+    rxjs "^6.6.3"
 
 "@ngtools/webpack@11.0.6":
   version "11.0.6"
@@ -7048,7 +7050,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@6.6.3, rxjs@^6.5.0, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@~6.6.0:
+rxjs@6.6.3, rxjs@^6.5.0, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@^6.6.3:
   version "6.6.3"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==

@@ -26,7 +26,8 @@
     "@angular/platform-browser": "~11.0.6",
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
-    "rxjs": "~6.6.0",
+    "@murus-app/node-utilities": "^0.1.0-7e458cf31bfb3d1e430f4274c1db0fe73ed4af35",
+    "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
