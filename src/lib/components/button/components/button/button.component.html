@@ -1,0 +1,8 @@
+<button
+  class="button"
+  [class.button_hovered]="isHovered$ | async"
+  (mouseenter)="setHoverState(hoverState.Active)"
+  (mouseleave)="setHoverState(hoverState.Inactive)"
+>
+  <ng-content></ng-content>
+</button>

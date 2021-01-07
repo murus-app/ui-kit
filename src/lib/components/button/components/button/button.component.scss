@@ -1,0 +1,31 @@
+@use './../../../../styles/colors.scss';
+@import './../../../../styles/font-faces.scss';
+
+:host {
+  display: block;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0.5rem 1rem;
+  background: colors.$color_accent;
+  color: colors.$color_regular-text;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: none;
+
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+
+  font-family: Capriola;
+  font-size: 0.75rem;
+
+  &_hovered {
+    box-shadow: 0 0 0.25rem colors.$color_accent;
+  }
+}
