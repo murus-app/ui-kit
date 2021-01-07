@@ -48,6 +48,69 @@
           }
         }
       }
+    },
+    "demo": {
+      "projectType": "application",
+      "root": "./demo",
+      "sourceRoot": "./demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist-demo",
+            "index": "./demo/src/index.html",
+            "main": "./demo/src/main.ts",
+            "polyfills": "./demo/src/polyfills.ts",
+            "tsConfig": "./tsconfig.app.json",
+            "aot": true,
+            "assets": ["./demo/src/favicon.ico", "./demo/src/assets"],
+            "styles": ["./demo/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "./demo/src/environments/environment.ts",
+                  "with": "./demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "demo:build"
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "demo:build"
+          }
+        }
+      }
     }
   },
   "schematics": {
